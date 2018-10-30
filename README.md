@@ -1,4 +1,4 @@
-# HERE WE BUS 
+# HERE WE BUS
 
 ## DEFINICIÓN DEL PROBLEMA
 
@@ -22,8 +22,23 @@ Ayudar a resolver la logística del transporte escolar a través de una WebApp q
 * Recibir notificaciones por alguna ventualidad que retrase la ruta
 * Mantenerse al tanto del tiempo estimado de recolección y/o llegada  
 
-## NUESTRA PROPUESTA 
+## NUESTRA PROPUESTA
 
+## Matriz de Priorización
+![MP](https://i.imgur.com/N2Hpr66.jpg)
+
+## Service Blue Print
+![SBP](https://i.imgur.com/X41Ntlq.jpg)
+
+## User Persona
+![UP](https://i.imgur.com/XUKvnPp.jpg)
+
+## Aplicación
+![APP](https://i.imgur.com/8OIbNYK.jpg)
+
+## Prototipo de Alta Fidelidad
+
+https://marvelapp.com/f703194
 
 ## Desarrolladoras
 * [Copelia Altamirano](https://github.com/Copelia) *FE*
