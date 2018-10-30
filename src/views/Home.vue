@@ -15,17 +15,14 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
     </ul>
   </div>
 </nav>
         <Map
             appId="LbRwyMzRp1cGXIsI0GNE"
             appCode="_Zz0xbDQRqeT03IH5Q22iQ"
-            lat="19.4284706"
-            lng="-99.1276627"
+            lat="194.326"
+            lng="-991.433"
             width="100%"
             height="835px" />
     </div>

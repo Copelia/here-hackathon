@@ -41,17 +41,17 @@ export default {
             center: { lng: this.lng, lat: this.lat }
         }
     );
-    this.geocoder.geocode({ searchText: this.location }, data => {
-      if(data.Response.View.length > 0) {
-        if(data.Response.View[0].Result.length > 0) {
-          var coords = data.Response.View[0].Result[0].Location.DisplayPosition;
-          this.map.setCenter({lat: coords.Latitude, lng: coords.Longitude });
-          this.map.addObject(new H.map.Marker({lat: coords.Latitude, lng: coords.Longitude }));
-        }
-      }
-    }, error => {
-      console.error(error);
-    });
+    // this.geocoder.geocode({ searchText: this.location }, data => {
+    //   if(data.Response.View.length > 0) {
+    //     if(data.Response.View[0].Result.length > 0) {
+    //       var coords = data.Response.View[0].Result[0].Location.DisplayPosition;
+    //       this.map.setCenter({lat: coords.Latitude, lng: coords.Longitude });
+    //       this.map.addObject(new H.map.Marker({lat: coords.Latitude, lng: coords.Longitude }));
+    //     }
+    //   }
+    // }, error => {
+    //   console.error(error);
+    // });
   }
 }
 </script>
