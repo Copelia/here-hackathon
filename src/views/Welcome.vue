@@ -1,14 +1,22 @@
 <template>
     <div class="container background">
       <div class="row">
-        <div class="col-">
-          <h3>Here</h3>
-          <h3>We</h3>
-          <h3>Bus</h3>
+        <div class="col-12">
+          <p id="title">HERE <br>
+             WE <br>
+             BUS</p>
           <form @submit.prevent="login">
-            <input type="email" v-model="email" placeholder="Correo electrónico">
-            <input type="password" v-model="password" placeholder="Contraseña">
-            <button class="btn btn-dark">Iniciar Sesión</button>
+            <div class="form-group">
+              <input class="input form-control" type="email" v-model="email" placeholder="Correo electrónico">
+              <input class="input form-control" type="password" v-model="password" placeholder="Contraseña">
+              <a id="reset" href="#">Forgot your password</a>
+            </div>
+            <div>
+              <button id="button" class="btn btn-dark">Iniciar Sesión</button>
+            </div>
+            <div>
+              <a id="create" href="#">¿No tienes una cuenta?</a>
+            </div>
           </form>
         </div>
       </div>
@@ -34,19 +42,64 @@ methods: {
 </script>
 
 <style scoped>
-.background{
-    background-image: url('../assets/School_Bus.jpg');
-    height: 100vh;
-}
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+  .background {
+    background-color: #7dbae4;
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
   }
+
+  p {
+    text-align: left;
+    margin-left: 49px;
+    justify-content: flex-start;
+  }
+
+  #title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    align-items: flex-start;
+  }
+
+  .input {
+    background-color: #ffffff;
+    width: 250px;
+    margin-left: 50px;
+    align-items: flex-end;
+  }
+  #button {
+    justify-content: center;
+  }
+
   form > * {
     display: block;
   }
+
+  #reset {
+    text-decoration: none;
+    color: #000000;
+  }
+  .form-group #reset a {
+    align-items: flex-end;
+    margin-right: 1px;
+    font-size: 7px;
+  }
+  /* Tamaños de pantalla */
+@media screen and (max-width:575px) {
+  #button {
+    
+  }
+  #title {
+    
+  }
+
+  .input {
+    /* width: 300px;
+    height: 100px; */
+  }
+}
 </style>
 
 

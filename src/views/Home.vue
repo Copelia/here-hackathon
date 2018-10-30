@@ -27,7 +27,7 @@
             lat="19.4284706"
             lng="-99.1276627"
             width="100%"
-            height="835px" />
+            height="835px"/>
     </div>
 </template>
 
