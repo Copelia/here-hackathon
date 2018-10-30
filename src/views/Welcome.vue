@@ -1,17 +1,21 @@
 <template>
     <div class="container background">
       <div class="row">
-        <div class="col">
+        <div class="col-12">
           <p id="title">HERE <br>
              WE <br>
              BUS</p>
           <form @submit.prevent="login">
             <div class="form-group">
               <input class="input form-control" type="email" v-model="email" placeholder="Correo electrónico">
-              <input class="input form-control" type="password" v-model="password" placeholder="Contraseña"> 
+              <input class="input form-control" type="password" v-model="password" placeholder="Contraseña">
+              <a id="reset" href="#">Forgot your password</a>
             </div>
             <div>
               <button id="button" class="btn btn-dark">Iniciar Sesión</button>
+            </div>
+            <div>
+              <a id="create" href="#">¿No tienes una cuenta?</a>
             </div>
           </form>
         </div>
@@ -38,9 +42,12 @@ methods: {
 </script>
 
 <style scoped>
+
   .background {
     background-color: #7dbae4;
     margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
   }
 
   p {
@@ -51,14 +58,16 @@ methods: {
 
   #title {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     font-size: 36px;
     align-items: flex-start;
   }
 
   .input {
     background-color: #ffffff;
-    width: 190px;
-    margin-left: 45px;
+    width: 250px;
+    margin-left: 50px;
+    align-items: flex-end;
   }
   #button {
     justify-content: center;
@@ -67,20 +76,17 @@ methods: {
   form > * {
     display: block;
   }
+
+  #reset {
+    text-decoration: none;
+    color: #000000;
+  }
+  .form-group #reset a {
+    align-items: flex-end;
+    margin-right: 1px;
+    font-size: 7px;
+  }
   /* Tamaños de pantalla */
-@media screen and (max-width:991px){
-  #button {
-
-  }
-  #title {
-
-  }
-
-  .input {
-
-  }
-}
-
 @media screen and (max-width:575px) {
   #button {
     
