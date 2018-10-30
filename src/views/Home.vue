@@ -3,8 +3,8 @@
         <Map
             appId="LbRwyMzRp1cGXIsI0GNE"
             appCode="_Zz0xbDQRqeT03IH5Q22iQ"
-            lat="37.7397"
-            lng="-121.4252"
+            lat="19.4284706"
+            lng="-99.1276627"
             width="100%"
             height="835px" />
     </div>
